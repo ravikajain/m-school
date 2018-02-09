@@ -1,0 +1,185 @@
+{
+  "project_info": {
+    "project_number": "796887987566",
+    "firebase_url": "https://qa-metacampus.firebaseio.com",
+    "project_id": "qa-metacampus",
+    "storage_bucket": "qa-metacampus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796887987566:android:08583e0828542843",
+        "android_client_info": {
+          "package_name": "com.metacampus_qa.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796887987566-0b50lao4c1ibrs6asru6274guaevfm8g.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "796887987566-hu81a9t09vr3i26hdjilgksage0blmo8.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "796887987566-q6jt24cs4vg5vafkahtc48efla57068r.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "796887987566-o3igv2sqid16u1mg1nt8lt4483513bkm.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "796887987566-mh0n0emufm55649euan0k2v8fvie7sot.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "796887987566.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCDDIO4zOXgNM6rUYbACZWL1idJEtipck"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796887987566:android:835a204a79aeb287",
+        "android_client_info": {
+          "package_name": "com.metacampusqa.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796887987566-gga83clihouko62saa9mj3iefnpgqk5m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.metacampusqa.mobile",
+            "certificate_hash": "55d4e9d53b09d86cf525259712b8d0363822cf35"
+          }
+        },
+        {
+          "client_id": "796887987566-0b50lao4c1ibrs6asru6274guaevfm8g.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "796887987566-iferlq360apn7l0cnt2rhgb35f49nt8f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.metacampusqa.mobile",
+            "certificate_hash": "ab05c8328fe60c6f01945c2b7c7accdd78739933"
+          }
+        },
+        {
+          "client_id": "796887987566-hu81a9t09vr3i26hdjilgksage0blmo8.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "796887987566-q6jt24cs4vg5vafkahtc48efla57068r.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "796887987566-o3igv2sqid16u1mg1nt8lt4483513bkm.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "796887987566-mh0n0emufm55649euan0k2v8fvie7sot.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "796887987566.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCDDIO4zOXgNM6rUYbACZWL1idJEtipck"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796887987566-0b50lao4c1ibrs6asru6274guaevfm8g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796887987566:android:7769d6f772c02be3",
+        "android_client_info": {
+          "package_name": "com.m_school_qa.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796887987566-0b50lao4c1ibrs6asru6274guaevfm8g.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "796887987566-hu81a9t09vr3i26hdjilgksage0blmo8.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "796887987566-q6jt24cs4vg5vafkahtc48efla57068r.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "796887987566-o3igv2sqid16u1mg1nt8lt4483513bkm.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "796887987566-mh0n0emufm55649euan0k2v8fvie7sot.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "796887987566.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCDDIO4zOXgNM6rUYbACZWL1idJEtipck"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
