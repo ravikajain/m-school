@@ -22,11 +22,17 @@ export class TransportPage {
 
   ionViewDidLoad() {
     this.firebase.getToken()
-  .then(token => console.log(`The token is ${token}`)) // save the token server-side and use it to push notifications to this device
+  .then(token => {
+    console.log(`The token is `);
+    console.log(token);
+  }) // save the token server-side and use it to push notifications to this device
   .catch(error => console.error('Error getting token', error));
     console.log('ionViewDidLoad TransportPage');
     this.firebase.onNotificationOpen()
-  .subscribe((token) => console.log(`Got a new token ${token}`));
+  .subscribe(token => {
+    console.log(`got message is `);
+    console.log(token);
+  });
   }
 
 }
