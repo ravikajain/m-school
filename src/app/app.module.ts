@@ -9,6 +9,7 @@ import { TransportPage } from '../pages/transport/transport';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { GooglePlus} from '@ionic-native/google-plus';
+import { Firebase } from '@ionic-native/firebase';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { GooglePlus} from '@ionic-native/google-plus';
     StatusBar,
     SplashScreen,
     GooglePlus,
+    Firebase,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
