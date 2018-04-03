@@ -15,7 +15,7 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
   <ion-list>
     <ion-item *ngFor="let trip of pastTrips">
       <h2>{{trip.trip_name}}</h2>
@@ -23,7 +23,7 @@
         <ion-icon name="time"></ion-icon>
         {{trip.time}}
       </h3>
-      <div>
+      <div style="font-size:14px;">
           <ion-icon name="person"></ion-icon>
           {{trip.driver_name}}
           <span style="float:right;">
