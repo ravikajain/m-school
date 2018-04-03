@@ -375,16 +375,15 @@ var TransportPage = (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])('map'),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */])
     ], TransportPage.prototype, "mapElement", void 0);
     TransportPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-transport',template:/*ion-inline-start:"D:\mobile\m-school\src\pages\transport\transport.html"*/'<!--\n  Generated template for the TransportPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<ion-header>\n  <ion-navbar color="primary">\n      <button ion-button menuToggle>\n        <ion-icon name="menu"></ion-icon>\n      </button>\n      <ion-title>Past Trips</ion-title>\n    </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list>\n    <ion-item *ngFor="let trip of pastTrips">\n      <h2>{{trip.trip_name}}</h2>\n      <h3>\n        <ion-icon name="time"></ion-icon>\n        {{trip.time}}\n      </h3>\n      <div>\n          <ion-icon name="person"></ion-icon>\n          {{trip.driver_name}}\n          <span style="float:right;">\n            <ion-icon name="bus"></ion-icon>\n            {{trip.vehicle_no}}\n          </span>\n      </div>\n      <div style="font-size:14px;">\n        <ion-icon name="radio-button-on" style="font-size:14px;color: green;"></ion-icon>\n        <span style="color:gray;">  {{trip.start_location}}</span>\n      </div>\n      <div style="font-size:14px;">\n        <ion-icon name="pin" style="font-size:14px;color: red;"></ion-icon>\n        <span style="color:gray;">  {{trip.end_location}}</span>\n      </div>\n    </ion-item>\n  </ion-list>\n  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">\n     <ion-infinite-scroll-content></ion-infinite-scroll-content>\n   </ion-infinite-scroll>\n</ion-content>\n'/*ion-inline-end:"D:\mobile\m-school\src\pages\transport\transport.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_firebase__["a" /* Firebase */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_firebase__["a" /* Firebase */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */]) === "function" && _e || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_firebase__["a" /* Firebase */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* ModalController */]])
     ], TransportPage);
     return TransportPage;
-    var _a, _b, _c, _d, _e;
 }());
 
 //# sourceMappingURL=transport.js.map
@@ -634,19 +633,18 @@ var LoginPage = (function () {
     }
     LoginPage.prototype.login = function () {
         console.log("clicked on login");
-        if (this.platform._platforms.indexOf("cordova") > -1) {
-            this.googlePlus.login({
-                "webClientId": "796887987566-hu81a9t09vr3i26hdjilgksage0blmo8.apps.googleusercontent.com",
-                "offline": true
-            }).then(function (res) {
-                console.log("loggedin");
-                console.log(res);
-            }).catch(function (err) {
-                console.log(err);
-            });
-        }
-        else {
-        }
+        // if(this.platform._platforms.indexOf("cordova")>-1){
+        //   this.googlePlus.login({
+        //     "webClientId":"796887987566-hu81a9t09vr3i26hdjilgksage0blmo8.apps.googleusercontent.com",
+        //     "offline":true
+        //   }).then((res) =>{
+        //     console.log("loggedin");
+        //     console.log(res)
+        //   }).catch((err)=>{
+        //     console.log(err)
+        //   });
+        // } else {
+        // }
         this.navCtrl.setRoot('dashboard');
         //this.navCtrl.setRoot(HomePage, {}, {animate: true, direction: 'forward'});
     };
@@ -654,9 +652,10 @@ var LoginPage = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-login',template:/*ion-inline-start:"D:\mobile\m-school\src\pages\login\login.html"*/'<ion-content padding style="background:#488AFF">\n  <div align="center" style="margin-top:20%">\n    <ion-img width="200" height="200" style="background:#488AFF;" src="assets/imgs/metacampus.png"></ion-img>\n  </div>\n  <div align="center" style="margin-top:15%">\n      <!-- <ion-img width="20" height="20" style="background:white;" src="assets/imgs/google-logo.png"></ion-img> -->\n    <button ion-button large block style="width:90%;background:white;color:#488AFF" (click)="login()">\n      <ion-icon>\n        <ion-img width="30" height="30" style="background:white;" src="assets/imgs/google-logo.png">\n        </ion-img>\n      </ion-icon>&nbsp;Login with Google\n    </button>\n  </div>\n  <!-- <button ion-button full color="danger" (click)="logout()">Logout</button> -->\n</ion-content>\n'/*ion-inline-end:"D:\mobile\m-school\src\pages\login\login.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_google_plus__["a" /* GooglePlus */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_google_plus__["a" /* GooglePlus */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_google_plus__["a" /* GooglePlus */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _c || Object])
     ], LoginPage);
     return LoginPage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=login.js.map
