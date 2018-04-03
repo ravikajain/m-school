@@ -4,17 +4,44 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-navbar color="primary">
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Transport</ion-title>
-  </ion-navbar>
-<ion-header>
 
+<ion-header>
+  <ion-navbar color="primary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Past Trips</ion-title>
+    </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
-
+  <ion-list>
+    <ion-item *ngFor="let trip of pastTrips">
+      <h2>{{trip.trip_name}}</h2>
+      <h3>
+        <ion-icon name="time"></ion-icon>
+        {{trip.time}}
+      </h3>
+      <div>
+          <ion-icon name="person"></ion-icon>
+          {{trip.driver_name}}
+          <span style="float:right;">
+            <ion-icon name="bus"></ion-icon>
+            {{trip.vehicle_no}}
+          </span>
+      </div>
+      <div style="font-size:14px;">
+        <ion-icon name="radio-button-on" style="font-size:14px;color: green;"></ion-icon>
+        <span style="color:gray;">  {{trip.start_location}}</span>
+      </div>
+      <div style="font-size:14px;">
+        <ion-icon name="pin" style="font-size:14px;color: red;"></ion-icon>
+        <span style="color:gray;">  {{trip.end_location}}</span>
+      </div>
+    </ion-item>
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+     <ion-infinite-scroll-content></ion-infinite-scroll-content>
+   </ion-infinite-scroll>
 </ion-content>

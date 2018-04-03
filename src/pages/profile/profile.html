@@ -1,0 +1,47 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<style>
+   #over_map_bottom { position: absolute; bottom: 0px; left: 0px; z-index: 99;background-color: white; width: 100%;padding: 4px 8px;}
+   #over_map_top { position: absolute; top: 10px; left: 0px; z-index: 99; background-color: white; width: 100%;padding: 4px 8px;}
+</style>
+<ion-header>
+
+  <ion-navbar color="primary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>{{pastTrip.trip_name}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+    <div id="over_map_top">
+      <ion-icon name="time"></ion-icon>
+      {{pastTrip.time}}
+    </div>
+    <div #map id="map" style="height:100%"></div>
+    <div id="over_map_bottom">
+      <div>
+        <ion-icon name="person"></ion-icon>
+        {{pastTrip.driver_name}}
+        <span style="float:right;">
+          <ion-icon name="bus"></ion-icon>
+          {{pastTrip.vehicle_no}}
+        </span>
+      </div>
+
+      <div>
+        <ion-icon name="radio-button-on" style="font-size:14px;color: green;"></ion-icon>
+        <span>  {{pastTrip.start_location}}</span>
+      </div>
+      <div>
+        <ion-icon name="pin" style="font-size:14px;color: red;"></ion-icon>
+        <span>  {{pastTrip.end_location}}</span>
+      </div>
+    </div>
+</ion-content>

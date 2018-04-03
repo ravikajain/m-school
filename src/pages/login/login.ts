@@ -1,42 +1,36 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { IonicPage, NavController, Platform } from 'ionic-angular';
 import {GooglePlus} from '@ionic-native/google-plus';
-import {TransportPage} from '../transport/transport';
 
-// @IonicPage()
+@IonicPage({
+  name: 'login',
+  segment: 'login'
+})
 @Component({
   selector: 'page-login',
-  templateUrl: 'login.html'
+  templateUrl: 'login.html',
+  // segment: 'login'
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController,public googlePlus: GooglePlus) {
+  constructor(public platform: Platform,public googlePlus: GooglePlus,public navCtrl: NavController) {
 
   }
   login(){
     console.log("clicked on login");
-    // if(this.platform && this.platform.is('cordova')){
+    if(this.platform._platforms.indexOf("cordova")>-1){
       this.googlePlus.login({
         "webClientId":"796887987566-hu81a9t09vr3i26hdjilgksage0blmo8.apps.googleusercontent.com",
         "offline":true
       }).then((res) =>{
         console.log("loggedin");
         console.log(res)
-        // this.userServiceProvider.baseURL=this.domainServiceProvider.getBaseURLByEmail(res.email);
-        // this.userServiceProvider.fetchUserData(res)
-        // .then((res)=>{
-        //
-        // }).catch((err)=>{
-        //
-        // });
       }).catch((err)=>{
         console.log(err)
       });
-    // }else{
-    //
-    // }
-
-    this.navCtrl.setRoot(TransportPage)
+    } else {
+    }
+    this.navCtrl.setRoot('dashboard')
     //this.navCtrl.setRoot(HomePage, {}, {animate: true, direction: 'forward'});
   }
 }
